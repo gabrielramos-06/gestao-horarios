@@ -29,8 +29,11 @@ config/       # Configurações de Segurança (Basic Auth), Swagger, Carga Inici
 controller/   # Controladores REST (Endpoints da API e documentação OpenAPI)
 
 dto/          # Objetos de Transferência de Dados para requisições e consultas consolidadas
+
 model/        # Entidades JPA/ORM (Professor, Disciplina, Turma, Horario) e validações
+
 repository/   # Interfaces Spring Data JPA para comunicação com o banco de dados
+
 service/      # Regras de negócio e orquestração das operações CRUD e filtros
 
 ## Funcionalidades implementadas
@@ -52,6 +55,7 @@ Credenciais de Autenticação Básica (Basic Auth)
 Ao abrir o Swagger UI, clique no botão verde Authorize no canto superior direito e informe:
 
 -Username: admin
+
 -Password: 123456
 
 ## Endpoints Principais da API
