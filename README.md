@@ -60,26 +60,19 @@ Ao abrir o Swagger UI, clique no botão verde Authorize no canto superior direit
 
 ## Endpoints Principais da API
 1. Professores (/api/professores)
-Método
-Endpoint
-Descrição
-GET
-/api/professores
-Lista todos os professores cadastrados
-GET
-/api/professores/{id}
-Busca um professor específico pelo ID
-POST
-/api/professores
-Cadastra um novo professor (com validação de nome, e-mail e titulação)
-PUT
-/api/professores/{id}
-Atualiza os dados de um professor existente
-DELETE
-/api/professores/{id}
-Exclui um professor pelo ID
 
-2. Disciplinas (/api/disciplinas)
+Método Endpoint Descrição
+GET   /api/professores Lista todos os professores cadastrados
+
+GET /api/professores/{id} Busca um professor específico pelo ID
+
+POST /api/professores Cadastra um novo professor (com validação de nome, e-mail e titulação)
+
+PUT /api/professores/{id} Atualiza os dados de um professor existente
+
+DELETE /api/professores/{id} Exclui um professor pelo ID
+
+3. Disciplinas (/api/disciplinas)
 Método
 Endpoint
 Descrição
@@ -99,7 +92,7 @@ DELETE
 /api/disciplinas/{id}
 Exclui uma disciplina pelo ID
 
-3. Turmas (/api/turmas)
+4. Turmas (/api/turmas)
 Método
 Endpoint
 Descrição
@@ -119,7 +112,7 @@ DELETE
 /api/turmas/{id}
 Exclui uma turma pelo ID
 
-4. Horários e Consultas Especiais (/api/horarios)
+5. Horários e Consultas Especiais (/api/horarios)
 Método
 Endpoint
 Descrição
@@ -153,3 +146,5 @@ git clone https://github.com/gabrielramos-06/gestao-horarios.git
 2. Abra a pasta gestao-horarios no VS Code.
 3. Execute a classe principal GestaoHorariosApplication.java clicando em Run (ou via terminal integrado com mvn spring-boot:run).
 4. O sistema irá inicializar automaticamente na porta 8080 e populará o banco de dados local com registros de exemplo na primeira execução.
+
+
