@@ -74,68 +74,50 @@ PUT /api/professores/{id} Atualiza os dados de um professor existente
 
 DELETE /api/professores/{id} Exclui um professor pelo ID
 
-3. Disciplinas (/api/disciplinas)
-Método
-Endpoint
-Descrição
-GET
-/api/disciplinas
-Lista todas as disciplinas cadastradas
-GET
-/api/disciplinas/{id}
-Busca uma disciplina específica pelo ID
-POST
-/api/disciplinas
-Cadastra uma nova disciplina (carga horária mínima de 20h)
-PUT
-/api/disciplinas/{id}
-Atualiza os dados de uma disciplina existente
-DELETE
-/api/disciplinas/{id}
-Exclui uma disciplina pelo ID
+2. Disciplinas (/api/disciplinas)
 
-4. Turmas (/api/turmas)
-Método
-Endpoint
-Descrição
-GET
-/api/turmas
-Lista todas as turmas cadastradas
-GET
-/api/turmas/{id}
-Busca uma turma específica pelo ID
-POST
-/api/turmas
-Cadastra uma nova turma (código, curso e semestre)
-PUT
-/api/turmas/{id}
-Atualiza os dados de uma turma existente
-DELETE
-/api/turmas/{id}
-Exclui uma turma pelo ID
+Método Endpoint Descrição
 
-5. Horários e Consultas Especiais (/api/horarios)
-Método
-Endpoint
-Descrição
-GET
-/api/horarios
-Lista todos os horários de aula cadastrados
-POST
-/api/horarios
-Cadastra um novo horário associando Professor, Disciplina e Turma
-PUT
-/api/horarios/{id}
-Atualiza um horário de aula existente
-DELETE
-/api/horarios/{id}
-Exclui um horário de aula
-GET
-/api/horarios/professor/{professorId}
-Consulta por Professor: Exibe disciplinas ministradas, turmas associadas, dias, horários e salas
-GET
-/api/horarios/turma/{turmaId}
-Consulta por Turma: Exibe professores responsáveis, disciplinas oferecidas, dias, horários e salas
+GET /api/disciplinas Lista todas as disciplinas cadastradas
+
+GET /api/disciplinas/{id} Busca uma disciplina específica pelo ID
+
+POST /api/disciplinas Cadastra uma nova disciplina (carga horária mínima de 20h)
+
+PUT /api/disciplinas/{id} Atualiza os dados de uma disciplina existente
+
+DELETE /api/disciplinas/{id} Exclui uma disciplina pelo ID
+
+3. Turmas (/api/turmas)
+
+Método Endpoint Descrição
+
+GET /api/turmas Lista todas as turmas cadastradas
+
+GET /api/turmas/{id} Busca uma turma específica pelo ID
+
+POST /api/turmas Cadastra uma nova turma (código, curso e semestre)
+
+PUT /api/turmas/{id} Atualiza os dados de uma turma existente
+
+DELETE /api/turmas/{id} Exclui uma turma pelo ID
+
+
+4. Horários e Consultas Especiais (/api/horarios)
+
+Método Endpoint Descrição
+
+GET /api/horarios Lista todos os horários de aula cadastrados
+
+POST /api/horarios Cadastra um novo horário associando Professor, Disciplina e Turma
+
+PUT /api/horarios/{id} Atualiza um horário de aula existente
+
+DELETE /api/horarios/{id} Exclui um horário de aula
+
+GET /api/horarios/professor/{professorId} Consulta por Professor: Exibe disciplinas ministradas, turmas associadas, dias, horários e salas
+
+GET /api/horarios/turma/{turmaId} Consulta por Turma: Exibe professores responsáveis, disciplinas oferecidas, dias, horários e salas
 
 ## Como Executar o Projeto
 ```bash
