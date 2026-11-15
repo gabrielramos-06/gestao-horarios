@@ -25,7 +25,9 @@ O código-fonte foi organizado aplicando boas práticas de Engenharia de Softwar
 
 br.com.unisales.horarios
 config/       # Configurações de Segurança (Basic Auth), Swagger, Carga Inicial e Tratamento Global de Erros
+
 controller/   # Controladores REST (Endpoints da API e documentação OpenAPI)
+
 dto/          # Objetos de Transferência de Dados para requisições e consultas consolidadas
 model/        # Entidades JPA/ORM (Professor, Disciplina, Turma, Horario) e validações
 repository/   # Interfaces Spring Data JPA para comunicação com o banco de dados
