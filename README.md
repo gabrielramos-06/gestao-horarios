@@ -59,9 +59,11 @@ Ao abrir o Swagger UI, clique no botão verde Authorize no canto superior direit
 -Password: 123456
 
 ## Endpoints Principais da API
+
 1. Professores (/api/professores)
 
 Método Endpoint Descrição
+
 GET   /api/professores Lista todos os professores cadastrados
 
 GET /api/professores/{id} Busca um professor específico pelo ID
